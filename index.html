@@ -59,6 +59,14 @@
       margin: 0;
       font-size: 1.05em;
     }
+    .sub-section {
+      margin-top: 20px;
+    }
+    .sub-section strong {
+      color: #A78BFA;
+      display: block;
+      margin-bottom: 4px;
+    }
   </style>
 </head>
 <body>
@@ -68,190 +76,250 @@
 
   <div class="highlight-box">
     <p>
-      <strong>Short version:</strong> Stellar Focus stores all your data on your device only.
-      We collect nothing. We have no servers. Nothing leaves your phone.
+      Stellar Focus is designed to keep your app data on your device. We do not create user accounts,
+      we do not operate user data servers for this version, and we do not sell or share your personal
+      information.
     </p>
   </div>
 
   <h2>1. What Data We Collect</h2>
 
   <p>
-    Stellar Focus does not collect, transmit, or receive any personal data. There are no user accounts,
-    no registration, and no login. The app works entirely without an internet connection.
+    Stellar Focus does not collect, transmit, or receive personal data from the app. There are no
+    user accounts, no registration, and no login. The app is designed to work without an internet
+    connection.
   </p>
 
   <p>The following data is stored <strong>locally on your device only</strong>:</p>
   <ul>
-    <li>Focus session records — duration, start and end time, completion status</li>
-    <li>Cosmic objects earned from completed sessions (planet type, position in your galaxy)</li>
+    <li>Focus session records, such as duration, start and end time, and completion status</li>
+    <li>Cosmic objects earned from completed sessions, such as planet type and position in your galaxy</li>
     <li>Stardust currency balance and transaction history</li>
     <li>Achievement unlock status</li>
-    <li>Mission progress (daily and weekly missions)</li>
+    <li>Mission progress, including daily and weekly missions</li>
     <li>App preferences and onboarding completion status</li>
-    <li>Streak tracking (consecutive days with completed sessions)</li>
+    <li>Streak tracking, such as consecutive days with completed sessions</li>
+    <li>Optional blocked-app selections, if you use the app blocking feature</li>
   </ul>
 
-  <p>The following data is <strong>never collected or transmitted</strong>:</p>
+  <p>The following data is <strong>not transmitted to us</strong>:</p>
   <ul>
     <li>Which apps you have installed on your device</li>
     <li>Which apps you choose to block during sessions</li>
-    <li>Your name, email address, or any account information</li>
-    <li>Location data of any kind</li>
-    <li>Device identifiers (advertising ID, IMEI, etc.)</li>
-    <li>Any analytics, crash reports, or usage telemetry</li>
-    <li>Any data sent to our servers — we have no servers in this version</li>
+    <li>Your name, email address, or account information</li>
+    <li>Location data</li>
+    <li>Device identifiers, such as advertising ID or IMEI</li>
+    <li>Analytics, advertising, or usage telemetry</li>
+    <li>App data sent to our servers — we do not operate app data servers in this version</li>
   </ul>
 
   <h2>2. How We Use Your Data</h2>
 
   <p>
-    We do not use your data because we do not have access to it. All data listed above stays
-    on your device and is used only to make the app function:
+    We do not use your app data on any server because we do not have access to it. The local data
+    listed above stays on your device and is used only to make the app function.
   </p>
+
+  <p>For example:</p>
   <ul>
     <li>Session records are used to display your galaxy and calculate your streak</li>
-    <li>The currency ledger is used to display your Stardust balance</li>
-    <li>Achievement and mission data is used to show your progress in those screens</li>
+    <li>The Stardust ledger is used to display your currency balance</li>
+    <li>Achievement and mission data is used to show your progress</li>
     <li>Preferences are used to remember your settings between sessions</li>
+    <li>Blocked-app selections are used locally to support the optional app blocking feature</li>
   </ul>
 
   <p>
-    No data is processed on any server. No data is shared with any third party. No data is sold.
-    No data is used for advertising.
+    No app data is processed on our servers. No app data is shared with third parties. No app data
+    is sold. No app data is used for advertising.
   </p>
 
   <h2>3. App Blocking Feature</h2>
 
   <p>
-    Stellar Focus includes an optional app blocking feature. When you use it:
+    Stellar Focus includes an optional app blocking feature. This feature is only used when you
+    choose to enable it.
   </p>
-  <ul>
-    <li>
-      <strong>Android:</strong> The app may request access to usage statistics
-      (via Android's "Usage access" system setting) to detect when a blocked app comes to the
-      foreground. This information is used only in real time during an active session — it is never
-      stored and never transmitted. Your list of blocked apps is stored locally on your device only
-      and is not accessible to us as developers.
-    </li>
-    <li>
-      <strong>iOS:</strong> The app uses Apple's Screen Time framework (FamilyControls /
-      ManagedSettings). App selection is handled through Apple's own FamilyActivityPicker — a
-      system interface that is specifically designed so that we, the developers, <em>cannot</em> see
-      which apps you have selected. We only receive an opaque token from Apple. We never know which
-      apps you blocked.
-    </li>
-  </ul>
+
+  <div class="sub-section">
+    <strong>Android</strong>
+    <p>
+      The app may request access to usage statistics through Android's "Usage access" system setting.
+      This permission is used to detect when a blocked app comes to the foreground during an active
+      focus session.
+    </p>
+    <p>
+      This information is used only on your device and only for the purpose of enforcing an active
+      focus session. It is not sent to us, not sold, and not shared with third parties. Your
+      blocked-app list is stored locally on your device and is not accessible to us as developers.
+    </p>
+  </div>
+
+  <div class="sub-section">
+    <strong>iOS</strong>
+    <p>
+      The app uses Apple's Screen Time framework, including FamilyControls and ManagedSettings.
+      App selection is handled through Apple's FamilyActivityPicker, a system interface designed
+      so that developers cannot see the specific apps selected by the user. We only receive an
+      opaque token from Apple. We do not know which apps you blocked.
+    </p>
+  </div>
 
   <h2>4. Third-Party Services</h2>
 
   <p>
-    Stellar Focus v1.0 does not integrate any third-party services, SDKs, analytics tools,
-    advertising networks, or crash reporting services. There are no Firebase, AdMob, Crashlytics,
-    Mixpanel, Amplitude, or similar integrations in this version.
+    Stellar Focus v1.0 does not integrate third-party analytics tools, advertising networks,
+    tracking SDKs, or third-party crash reporting SDKs. There are no Firebase Analytics, AdMob,
+    Crashlytics, Mixpanel, Amplitude, or similar integrations in this version.
   </p>
 
   <p>
-    If third-party services are added in a future version, this policy will be updated and you will
-    be notified in-app before any data leaves your device. You will have the option to opt out.
+    App stores and operating systems, such as Google Play, Android, iOS, or the App Store, may
+    provide platform-level diagnostic or crash information according to their own privacy settings
+    and policies. Stellar Focus does not add its own third-party analytics or crash reporting service.
+  </p>
+
+  <p>
+    If third-party services are added in a future version, this Privacy Policy will be updated.
+    If any future feature causes app data to leave your device, we will notify you in-app before
+    that feature is activated and, where required, ask for your consent.
   </p>
 
   <h2>5. Children's Privacy</h2>
 
   <p>
     Stellar Focus is not directed at children under the age of 13. We do not knowingly collect
-    personal information from children under 13. If you are under 13, please do not use this app.
-    Because we collect no data at all, there is no risk of inadvertently collecting children's
-    personal information.
+    personal information from children under 13.
   </p>
 
   <p>
-    The app is rated "Everyone" by Google Play and is appropriate for general audiences. It contains
-    no violence, adult content, or inappropriate material. Its target audience is students and
-    knowledge workers ages 13 and older.
+    Because Stellar Focus does not transmit app data to us, we do not knowingly receive personal
+    information from children through the app.
+  </p>
+
+  <p>
+    The app is intended for general audiences, especially students and knowledge workers aged 13
+    and older. It contains no violence, adult content, or inappropriate material.
   </p>
 
   <h2>6. Data Retention and Deletion</h2>
 
   <p>
-    Your data is stored locally on your device for as long as the app is installed. You can delete
-    all app data at any time using one of these methods:
+    Your app data is stored locally on your device for as long as the app is installed, unless you
+    delete it earlier.
   </p>
+
+  <p>You can delete all local app data at any time using one of these methods:</p>
   <ul>
-    <li>In-app: Settings → Delete all my data (immediately and permanently removes all local data)</li>
-    <li>Via Android settings: Settings → Apps → Stellar Focus → Storage → Clear Data</li>
-    <li>By uninstalling the app (removes all local app data)</li>
+    <li>In the app: Settings → Delete all my data</li>
+    <li>On Android: Settings → Apps → Stellar Focus → Storage → Clear Data</li>
+    <li>By uninstalling the app</li>
   </ul>
 
   <p>
-    There is no server-side data to delete because no data is ever sent to a server.
-    Deletion is immediate and irreversible — we have no copy of your data to restore from.
+    There is no server-side app data to delete because your app data is not sent to our servers.
+    Deletion is immediate and irreversible. We have no copy of your local app data and cannot
+    restore it.
   </p>
 
   <h2>7. Security</h2>
 
   <p>
-    Your session data is stored in a local SQLite database on your device. The database is protected
-    by your device's own security model (full-disk encryption, app sandboxing). We do not apply
-    additional application-level encryption to the local database in this version.
+    Your app data is stored in a local SQLite database on your device. The database is protected
+    by your device's own security model, such as app sandboxing and device-level encryption where
+    available.
   </p>
 
   <p>
-    Because data never leaves your device, the primary security boundary is your device's own
-    lock screen and system security. We recommend keeping your device locked and your Android or
-    iOS software up to date.
+    We do not apply additional application-level encryption to the local database in this version.
+  </p>
+
+  <p>
+    Because your app data stays on your device, the primary security boundary is your device's own
+    lock screen and operating system security. We recommend keeping your device locked and your
+    Android or iOS software up to date.
   </p>
 
   <h2>8. Changes to This Policy</h2>
 
   <p>
     We may update this Privacy Policy from time to time. The "Last updated" date at the top of this
-    page reflects when the most recent change was made. We will notify you of any material changes
-    in-app before they take effect. Continued use of Stellar Focus after a policy update constitutes
-    acceptance of the revised policy.
+    page reflects the most recent change.
   </p>
 
   <p>
-    If we ever add cloud sync, analytics, or any feature that causes data to leave your device,
-    that change will require explicit in-app consent before it is activated. It will not happen
-    silently via an app update.
+    We will notify you of material changes in-app before they take effect where appropriate.
   </p>
-
-  <h2>9. Your Rights (GDPR / CCPA)</h2>
 
   <p>
-    Because Stellar Focus does not collect or process any personal data on a server, the traditional
-    GDPR and CCPA rights (access, portability, erasure, correction) apply only to data on your own
-    device. You have full control over all your data at all times:
+    If we ever add cloud sync, analytics, advertising, or any feature that causes app data to leave
+    your device, that change will not happen silently. We will update this Privacy Policy and, where
+    required, ask for your explicit consent before activating that feature.
   </p>
-  <ul>
-    <li><strong>Access:</strong> All your data is visible within the app (session history, galaxy, achievements)</li>
-    <li><strong>Deletion:</strong> Delete all data at any time via Settings → Delete all my data</li>
-    <li><strong>Portability:</strong> In this version, Stellar Focus does not provide a built-in export feature. Your data remains stored locally on your device. We may add an export option in a future version.</li>
-    <li><strong>Correction:</strong> Because your data is stored locally, you can correct supported editable data directly within the app, where editing features are available.</li>
-  </ul>
+
+  <h2>9. Your Privacy Rights</h2>
+
+  <p>
+    Because Stellar Focus does not receive or store your app data on our servers, we cannot access,
+    export, correct, or delete your local app data for you. You remain in control of the data stored
+    on your own device.
+  </p>
+
+  <p>You can exercise control over your data in the following ways:</p>
+
+  <div class="sub-section">
+    <strong>Access</strong>
+    <p>
+      You can view your local data inside the app, such as your session history, galaxy,
+      achievements, missions, and preferences.
+    </p>
+  </div>
+
+  <div class="sub-section">
+    <strong>Deletion</strong>
+    <p>
+      You can delete all local app data at any time through Settings → Delete all my data, through
+      your device settings, or by uninstalling the app.
+    </p>
+  </div>
+
+  <div class="sub-section">
+    <strong>Portability</strong>
+    <p>
+      Stellar Focus v1.0 does not currently provide a built-in export feature. Your data remains
+      stored locally on your device. We may add an export option in a future version.
+    </p>
+  </div>
+
+  <div class="sub-section">
+    <strong>Correction</strong>
+    <p>
+      Where the app provides editing features, you can correct supported local data directly inside
+      the app.
+    </p>
+  </div>
 
   <p>
     We do not sell personal information. We do not share personal information with third parties.
-    Because Stellar Focus does not receive, access, or store your app data on any server, we cannot
-    access, export, correct, or delete that data for you. You remain in control of the local data
-    stored on your device.
+    We do not use app data for advertising or tracking.
   </p>
 
   <h2>10. Contact</h2>
 
   <p>
-    If you have any questions about this Privacy Policy or the app's data practices, please contact:
+    If you have any questions about this Privacy Policy or Stellar Focus's data practices, please
+    contact:
   </p>
   <p>
     <strong>Email:</strong> <a href="mailto:keremmert348@gmail.com">keremmert348@gmail.com</a>
   </p>
   <p>
     If you contact us by email, we will receive your email address and the content of your message.
-    We use this information only to respond to your inquiry and do not add it to any marketing list
-    or share it with third parties.
+    We use this information only to respond to your inquiry. We do not add it to a marketing list
+    and do not share it with third parties, unless required by law.
   </p>
   <p>
-    We aim to respond to all privacy-related inquiries within 5 business days.
+    We aim to respond to privacy-related inquiries within 5 business days.
   </p>
 
   <hr style="border: none; border-top: 1px solid #2D2B55; margin-top: 48px;">
